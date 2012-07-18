@@ -15,4 +15,6 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'movies.views.index'),
+    url(r'^add_movie', 'movies.views.add_movie_view' ),
+    url(r'^add', 'movies.views.add')
 )
