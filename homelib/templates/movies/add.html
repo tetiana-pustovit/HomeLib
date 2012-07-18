@@ -1,0 +1,7 @@
+<form action="/add/" method="post" >
+{% csrf_token %}
+Movie name: <input type="text" name="name" /><br />
+Movie genre: <input type="text" name="descr" /> <br />
+Movie description: <input type="textarea" name="genre" />
+<input type="submit" value="Add" />
+</form>
