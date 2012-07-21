@@ -1,1 +1,6 @@
-{{ full_movies }}
+
+{%for e in full_movies %}
+{{e.name}} | {{e.genre}} |  {{e.description}}<br>
+{% endfor %}
+<a href="/add">Add another movie</a>
+
