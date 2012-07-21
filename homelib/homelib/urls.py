@@ -16,5 +16,6 @@ urlpatterns = patterns('',
     # url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'movies.views.index'),
     url(r'^add_movie', 'movies.views.add_movie_view' ),
-    url(r'^add', 'movies.views.add')
+    url(r'^add', 'movies.views.add'),
+    url(r'^movies', 'navigate_to_movies_view')
 )
