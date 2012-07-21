@@ -1,6 +1,19 @@
+<!DOCTYPE html>
 <html>
-<h1 align = "center">Currnet list of movies that were added</h1>
-<table border = "1px" align = "center">
+
+<table border = "1px" align = "center" style = "border-collapse:collapse;">
+	<thead>
+		<tr>
+			<th colspan = "3">
+				<h1>Currnet list of movies that were added</h1>
+			</th>
+		</tr>
+		<tr>
+			<th>Movie name</th>
+			<th>Movie genre</th>
+			<th>Movie description</th>
+		</tr>
+	</thead>
 {%for e in full_movies %}
 <tr>
 <td>
@@ -16,4 +29,5 @@
 {% endfor %}
 <table>
 	<p align="center"><a href="/add"><strong>Add another movie</strong></a></p>
+
 </html>
