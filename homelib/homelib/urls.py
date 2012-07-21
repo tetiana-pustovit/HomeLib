@@ -17,5 +17,5 @@ urlpatterns = patterns('',
     url(r'^$', 'movies.views.index'),
     url(r'^add_movie', 'movies.views.add_movie_view' ),
     url(r'^add', 'movies.views.add'),
-    url(r'^movies', 'navigate_to_movies_view')
+    url(r'^movies', 'movies.views.navigate_to_movies_view')
 )

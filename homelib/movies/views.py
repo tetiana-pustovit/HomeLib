@@ -10,7 +10,8 @@ def index(request):
 	return render_to_response('movies/index.html', {'full_movies' : full_movies_list})
 
 def navigate_to_movies_view(request):
-	return render_to_response('movies/movies.html', {'full_movies' : full_movies_list, 'movie' : movie})
+	full_movies_list = Movies.objects.all()
+	return render_to_response('movies/movies.html', {'full_movies' : full_movies_list})
 
 def add_movie_view(request):
 	return render_to_response('movies/add.html', context_instance=RequestContext(request))
