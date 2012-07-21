@@ -1,6 +1,19 @@
-
+<html>
+<h1 align = "center">Currnet list of movies that were added</h1>
+<table border = "1px" align = "center">
 {%for e in full_movies %}
-{{e.name}} | {{e.genre}} |  {{e.description}}<br>
+<tr>
+<td>
+	{{e.name}}
+</td>
+<td>
+	{{e.genre}}
+</td>
+<td>
+	{{e.description}}
+</td>
+</tr>
 {% endfor %}
-<a href="/add">Add another movie</a>
-
+<table>
+	<p align="center"><a href="/add"><strong>Add another movie</strong></a></p>
+</html>
